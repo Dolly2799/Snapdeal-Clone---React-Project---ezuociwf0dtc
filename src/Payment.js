@@ -7,7 +7,7 @@ import{CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 
 function Payment() {
 
-    const [{basket, user} ] = useStateValue();
+    const [{basket} ] = useStateValue();
   
   return (
     <div className='payment'>
