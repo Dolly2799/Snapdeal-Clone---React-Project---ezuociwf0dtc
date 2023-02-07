@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './Login.css';
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 
 function Login() {
-    const navigate = useNavigate();
+    const history = useHistory();
     const [input, setInput] = useState({
         email: "",
         password: ""
@@ -54,7 +54,7 @@ function Login() {
         alert("invalid details");
         }else{
             alert("user login succesfully");
-            navigate('/')
+            history.push('/')
         }
    }
 }
